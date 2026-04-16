@@ -1,0 +1,134 @@
+@use "../_global/mixins" as *;
+
+img:where(.mothers-main *) {
+  height: auto;
+}
+.mothers-main {
+  overflow: clip;
+  container-type: inline-size;
+  background-color: #fff;
+  color: #444;
+  font-family: var(--ff-noto-sans);
+}
+
+/* -----------------------------------------------------------------------
+## MARK: Components ##################################################
+----------------------------------------------------------------------- */
+.mothers-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 100vw;
+  margin-inline: auto;
+  font-size: fluid(14,16);
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-align: center;
+  transition: all .2s 0s linear;
+  &[data-type="outline"] {
+    border: 1px solid #EA6770;
+    background: #fff;
+    color: #EA6770;
+    @media (any-hover: hover) {
+      &:hover {
+        background: #EA6770;
+        color: #fff;
+      }
+    }
+  }
+  &[data-type="bg"] {
+    padding-block: 16px;
+    border: 1px solid #EA6770;
+    background-color: #EA6770;
+    color: #fff;
+    @media (any-hover: hover) {
+      &:hover {
+        background: #fff;
+        color: #EA6770;
+      }
+    }
+  }
+  svg {
+    position: absolute;
+    top: 50%;
+    right: fluid(20,30);
+    transform: translateY(-50%);
+    width: fluid(13,15);
+    height: auto;
+  }
+}
+
+/* -----------------------------------------------------------------------
+## MARK: Topics ##################################################
+----------------------------------------------------------------------- */
+.mothers-topics {
+  padding: fluid(60,80) fluid(25,40);
+  &__title {
+    display: grid;
+    gap: 4px;
+    justify-items: center;
+    text-align: center;
+    img {
+      display: block;
+      width: 114px;
+      height: auto;
+      margin-inline: auto;
+    }
+    span {
+      color: #EA6770;
+      font-family: var(--ff-noto-serif);
+      font-size: fluid(32,40);
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+.mothers-topicsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: fluid(32,60) fluid(15,60);
+  max-width: 980px;
+  margin-block-start: 40px;
+  margin-inline: auto;
+  &__item-link {
+    display: grid;
+    gap: cqw(8);
+    @include mediaQuery() {
+      container-type: inline-size;
+      container-name: topicsList;
+      display: grid;
+      gap: calc(60/980 * 100%);
+      grid-template-columns: repeat(2, 1fr);
+    }
+    img {
+      width: 100%;
+      transition: opacity .2s 0s linear;
+    }
+    @media (any-hover: hover) {
+      &:hover img {
+        opacity: 0.6;
+      }
+    }
+  }
+  &__body {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+    gap: 4px;
+  }
+  &__title {
+    font-size: fluid(14,18);
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+  }
+  &__text {
+    font-size: fluid(12,14);
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "wacoal_bratop",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev:css": "sass --watch --poll src/styles/mothers260423.scss:public/asset/topics/campaign/mothers_day/css/mothers260423.css --no-source-map",
+    "dev:js": "esbuild src/scripts/mothers_day/mothers260423.js --bundle --format=esm --platform=browser --target=es2018 --outfile=public/asset/topics/campaign/mothers_day/js/mothers260423.js --watch",
+    "dev:astro": "astro dev",
+    "dev:sync": "browser-sync start --config bs.config.cjs",
+    "dev": "concurrently -n \"css,js,astro,sync\" -c \"blue,cyan,green,magenta\" \"npm run dev:css\" \"npm run dev:js\" \"npm run dev:astro\" \"npm run dev:sync\"",
+    "build:css": "sass src/styles/mothers260423.scss public/asset/topics/campaign/mothers_day/css/mothers260423.css --no-source-map",
+    "build:js": "esbuild src/scripts/mothers_day/mothers260423.js --bundle --format=esm --platform=browser --target=es2018 --outfile=public/asset/topics/campaign/mothers_day/js/mothers260423.js",
+    "build": "npm run build:css && npm run build:js && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "astro": "^6.1.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1",
+    "esbuild": "^0.25.0",
+    "sass": "^1.98.0"
+  }
+}

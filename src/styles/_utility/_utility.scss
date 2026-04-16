@@ -1,0 +1,17 @@
+@use "../_global/mixins" as *;
+
+/* -----------------------------------------------------------------------
+## display ##################################################
+----------------------------------------------------------------------- */
+.u-pcbr {
+  display: none!important;
+  @include mediaQuery(pc) {
+    display: inline!important;
+  }
+}
+.u-spbr {
+  display: inline;
+  @include mediaQuery(pc) {
+    display: none!important;
+  }
+}

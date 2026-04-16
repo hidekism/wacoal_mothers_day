@@ -1,0 +1,295 @@
+---
+import headerHtml from '../components/fragments/header.html?raw';
+import footerInnerHtml from '../components/fragments/footer.html?raw';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  ogpImageUrl?: string;
+}
+const {
+  title = '',
+  description = '',
+  keywords = '',
+  ogpImageUrl = ''
+} = Astro.props;
+const staticlink = '?$staticlink$';
+---
+
+<html lang="ja">
+	<head>
+    <!-- YOTTAA Tag -->
+    <script is:inline src="https://rapid-cdn.yottaa.com/rapid/lib/S5M5_zkMSzA3DA.js"></script>
+    <!-- End YOTTAA Tag -->
+    <meta charset=UTF-8>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title+'｜ワコール直営の公式下着通販サイト ワコールウェブストア'}</title>
+    <link rel="apple-touch-icon-precomposed" href="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw9e7b27b5/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw7da22f6f/images/favicon.ico">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <!-- OGP -->
+    <meta property="og:title" content=`${title}｜ワコール直営の公式下着通販サイト ワコールウェブストア`>
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://store.wacoal.jp/topics/campaign/bratop_collection.html">
+    <meta property="og:image" content={ogpImageUrl+staticlink}>
+    <meta property="og:description" content={description}>
+    <meta property="og:locale" content="ja_JP">
+    <meta property="fb:app_id" content="1488639804719704">
+    <!-- twitter cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Wacoal_webstore">
+    <meta property="twitter:title" content=`${title}｜ワコール直営の公式下着通販サイト Wacoal Web Store`>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:url" content="https://store.wacoal.jp/topics/campaign/bratop_collection.html">
+    <meta name="twitter:image" content={ogpImageUrl+staticlink}>
+    <link href="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/lib/jquery/ui/jquery-ui.min.css" type="text/css" rel="stylesheet" />
+    <!-- Wacoal 共通CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/css/r2_common.css">
+    <link rel="stylesheet" href="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/css/r2_header.css">
+    <link rel="stylesheet" href="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/css/r2_footer.css">
+    <link rel="stylesheet" href="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/css/r2_module.css">
+    <link rel="stylesheet" href="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/css/rn_main.css" />
+    <script is:inline src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/js/rn_main.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/js/lib/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript">//<!--
+      /* <![CDATA[ (head-active_data.js) */
+      var dw = (window.dw || {});
+      dw.ac = {
+        _analytics: null,
+        _events: [],
+        _category: "",
+        _searchData: "",
+        _anact: "",
+        _anact_nohit_tag: "",
+        _analytics_enabled: "true",
+        _timeZone: "Asia/Tokyo",
+        _capture: function (configs) {
+          if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+          }
+          dw.ac._events.push(configs);
+        },
+        capture: function () {
+          dw.ac._capture(arguments);
+          // send to CQ as well:
+          if (window.CQuotient) {
+            window.CQuotient.trackEventsFromAC(arguments);
+          }
+        },
+        EV_PRD_SEARCHHIT: "searchhit",
+        EV_PRD_DETAIL: "detail",
+        EV_PRD_RECOMMENDATION: "recommendation",
+        EV_PRD_SETPRODUCT: "setproduct",
+        applyContext: function (context) {
+          if (typeof context === "object" && context.hasOwnProperty("category")) {
+            dw.ac._category = context.category;
+          }
+          if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+            dw.ac._searchData = context.searchData;
+          }
+        },
+        setDWAnalytics: function (analytics) {
+          dw.ac._analytics = analytics;
+        },
+        eventsIsEmpty: function () {
+          return 0 == dw.ac._events.length;
+        }
+      };
+      /* ]]> */
+      // -->
+    </script>
+    <script type="text/javascript">//<!--
+      /* <![CDATA[ (head-cquotient.js) */
+      var CQuotient = window.CQuotient = {};
+      CQuotient.clientId = 'bdct-StoreWacoal';
+      CQuotient.realm = 'BDCT';
+      CQuotient.siteId = 'StoreWacoal';
+      CQuotient.instanceType = 'prd';
+      CQuotient.locale = 'ja_JP';
+      CQuotient.fbPixelId = '__UNKNOWN__';
+      CQuotient.activities = [];
+      CQuotient.cqcid = '';
+      CQuotient.cquid = '';
+      CQuotient.cqeid = '';
+      CQuotient.cqlid = '';
+      CQuotient.apiHost = 'api.cquotient.com';
+      /* Turn this on to test against Staging Einstein */
+      /* CQuotient.useTest= true; */
+      CQuotient.useTest = ('true' === 'false');
+      CQuotient.initFromCookies = function () {
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf('cqcid=') == 0) {
+            CQuotient.cqcid = c.substring('cqcid='.length, c.length);
+          } else if (c.indexOf('cquid=') == 0) {
+            var value = c.substring('cquid='.length, c.length);
+            if (value) {
+              var split_value = value.split("|", 3);
+              if (split_value.length > 0) {
+                CQuotient.cquid = split_value[0];
+              }
+              if (split_value.length > 1) {
+                CQuotient.cqeid = split_value[1];
+              }
+              if (split_value.length > 2) {
+                CQuotient.cqlid = split_value[2];
+              }
+            }
+          }
+        }
+      }
+      CQuotient.getCQCookieId = function () {
+        if (window.CQuotient.cqcid == '')
+          window.CQuotient.initFromCookies();
+        return window.CQuotient.cqcid;
+      };
+      CQuotient.getCQUserId = function () {
+        if (window.CQuotient.cquid == '')
+          window.CQuotient.initFromCookies();
+        return window.CQuotient.cquid;
+      };
+      CQuotient.getCQHashedEmail = function () {
+        if (window.CQuotient.cqeid == '')
+          window.CQuotient.initFromCookies();
+        return window.CQuotient.cqeid;
+      };
+      CQuotient.getCQHashedLogin = function () {
+        if (window.CQuotient.cqlid == '')
+          window.CQuotient.initFromCookies();
+        return window.CQuotient.cqlid;
+      };
+      CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+        try {
+          if (Object.prototype.toString.call(events) === "[object Array]") {
+            events.forEach(_trackASingleCQEvent);
+          } else {
+            CQuotient._trackASingleCQEvent(events);
+          }
+        } catch (err) { }
+      };
+      CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+        if (event && event.id) {
+          if (event.type === dw.ac.EV_PRD_DETAIL) {
+            CQuotient.trackViewProduct({ id: '', alt_id: event.id, type: 'raw_sku' });
+          } // not handling the other dw.ac.* events currently
+        }
+      };
+      CQuotient.trackViewProduct = function (/* Object */ cqParamData) {
+        var cq_params = {};
+        cq_params.cookieId = CQuotient.getCQCookieId();
+        cq_params.userId = CQuotient.getCQUserId();
+        cq_params.emailId = CQuotient.getCQHashedEmail();
+        cq_params.loginId = CQuotient.getCQHashedLogin();
+        cq_params.product = cqParamData.product;
+        cq_params.realm = cqParamData.realm;
+        cq_params.siteId = cqParamData.siteId;
+        cq_params.instanceType = cqParamData.instanceType;
+        cq_params.locale = CQuotient.locale;
+
+        if (CQuotient.sendActivity) {
+          CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+        } else {
+          CQuotient.activities.push({ activityType: 'viewProduct', parameters: cq_params });
+        }
+      };
+      /* ]]> */
+      // -->
+    </script>
+    <!-- UI -->
+
+    <!--[if lte IE 8]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/chuckcarpenter/REM-unit-polyfill/master/js/rem.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      if (window.jQuery) {
+        jQuery(document).ready(function () {
+          if (screen.width < 768) {
+            jQuery('#footer').append('<a href="/home" class="full-site-link">View Full Site</a>');
+            jQuery('.full-site-link')
+              .attr('href', '/home/FullSite')
+              .click(function (e) {
+                e.preventDefault();
+                jQuery.ajax({
+                  url: '/home/FullSite',
+                  success: function () {
+                    window.location.reload();
+                  }
+                });
+              }
+              );
+          }
+        });
+      }
+    </script>
+    <script>
+      window.awoo = {
+        init: function (c) {
+          var a, b; document.getElementById("awoo-sdk-js") || ((a = document.createElement("script")).type = "text/javascript", a.id = "awoo-sdk-js", a.async = !0, a.charset = "UTF-8", a.src = ("https:" === document.location.protocol ? "https://" : "http://") + "api.awoo.org/libs/awoo-sdk-js-latest.min.js", (b = document.getElementsByTagName("script")[0]).parentNode.insertBefore(a, b)), function () { let a = setInterval(function () { if (window.AwooSDK) return clearInterval(a), c() }, 300) }()
+        }
+      }
+      function executeAwoo() {
+        awoo.init(() => {
+          const config = {
+            id: 5066232912,
+            lang: 'ja',
+            japaneseYenProductPriceMode: false,
+            keywordApiVer: 'v1', keywordApiLimit: 12, popularTagTitle: '人気検索ワード', popularProductTitle: ''
+          }
+          new AwooSDK(config)
+        })
+      }
+      var awooIntervalID;
+      var importScriptAwoo = () => {
+        var awooTag = document.getElementById('awoo-keyword-popular-tags');
+        if (awooTag) {
+          executeAwoo();
+          clearInterval(awooIntervalID);
+        }
+      }
+      awooIntervalID = setInterval(importScriptAwoo, 100);
+    </script>
+    <link rel="canonical" href="https://store.wacoal.jp/topics/campaign/mothers_day.html" />
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-T4RT98B');</script>
+    <!-- End Google Tag Manager -->
+    <script>
+      !function (e, a, n, t) {
+        var i = e.head; if (i) {
+          if (a) return;
+          var o = e.createElement("style");
+          o.id = "alloy-prehiding", o.innerText = n, i.appendChild(o), setTimeout(function () { o.parentNode && o.parentNode.removeChild(o) }, t)
+        }
+      }
+        (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".at-header-banner, .at-top-banner, .at-products-area { opacity: 0 !important }", 3000);
+    </script>
+    <script is:inline src="https://assets.adobedtm.com/6463582a3ff4/f7b418109cbc/launch-42ef420050f8.min.js"></script>
+  </head>
+  <body data-dwithease-toolbar="false" class="is-loaded">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4RT98B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <Fragment set:html={headerHtml} />
+    <slot />
+    <Fragment set:html={footerInnerHtml} />
+	</body>
+</html>

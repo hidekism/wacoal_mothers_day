@@ -1,0 +1,965 @@
+<div id="sns" class="border-t border-gray-e6 pb-[24px] pt-[24px] md:border-0 md:pb-[40px] md:pt-[48px]">
+  <p class="text-center text-[15px] font-semibold leading-[1] tracking-[0.08em] md:text-[16px]">
+    シェアする
+  </p>
+  <ul class="mt-[20px] flex justify-center gap-x-[24px] md:mt-[22px] md:gap-x-[32px]">
+    <li>
+      <a href="" target="_blank" rel="noopener" class="grid h-[48px] w-[48px] place-items-center rounded-[50%] bg-black-3 transition-opacity duration-200 ease-[ease] hover:opacity-70 md:h-[52px] md:w-[52px] tx-facebook">
+        <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw18f977e7/images/rn_common/icon_facebook_wh.svg" alt="" class="block h-[16px] w-[16px] md:h-[17px] md:w-[17px]" width="16" height="16">
+      </a>
+    </li>
+    <li>
+      <a href="" target="_blank" rel="noopener" class="grid h-[48px] w-[48px] place-items-center rounded-[50%] bg-black-3 transition-opacity duration-200 ease-[ease] hover:opacity-70 md:h-[52px] md:w-[52px] tx-twitter">
+        <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw7fc92630/images/rn_common/icon_x_wh.svg" alt="" class="block w-[15px] fill-current text-white" width="15" height="15.3">
+      </a>
+    </li>
+    <li>
+      <a href="" target="_blank" rel="noopener" class="grid h-[48px] w-[48px] place-items-center rounded-[50%] bg-black-3 transition-opacity duration-200 ease-[ease] hover:opacity-70 md:h-[52px] md:w-[52px] tx-line">
+        <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw6a1016e9/images/rn_common/icon_line_wh.svg" alt="" class="block w-[18px]" width="18" height="17">
+      </a>
+    </li>
+  </ul>
+</div>
+<script>
+  var oneEncodeTitle = encodeURIComponent(document.title);
+  var oneEncodeUrl = encodeURIComponent(location.href);
+  var oneEncodeReferer = encodeURIComponent(document.referrer);
+  var lineTitle = document.title;
+  var tw_share = document.querySelector(".tx-twitter");
+  tw_share.setAttribute("href", "https://x.com/intent/tweet?text=" + oneEncodeTitle
+    + "&url=" + oneEncodeUrl + "&original_referer=" + oneEncodeReferer
+    + "','tw','width=626,height=300,menubar=no,toolbar=no,scrollbars=yes'")
+  var fb_share = document.querySelector(".tx-facebook");
+  fb_share.setAttribute("href", "http://www.facebook.com/sharer/sharer.php?u=" + oneEncodeUrl);
+  var li_share = document.querySelector(".tx-line");
+  li_share.setAttribute("href", "https://line.me/R/msg/text/?" + lineTitle + "%20" + oneEncodeUrl);
+</script>
+<footer id="rn-footer" class="rn-footer">
+  <button class="js-rn-page-top pagetop pointer-events-none fixed bottom-[24px] right-[24px] z-40 h-[40px] w-[40px] rounded-[50%] border border-white bg-black-3 bg-opacity-80 opacity-0 transition duration-200 ease-[ease] md:bottom-[32px] md:right-[32px] md:hover:!opacity-70">
+    <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw6ae68811/images/rn_common/icon_arrow-white.svg" alt="" class="absolute inset-[0_0_2px_0] m-auto block h-[10px] w-[6px] rotate-[-90deg] fill-white" width="10" height="6">
+  </button>
+  <div class="border-t border-gray-d bg-gray-f5">
+    <div class="md:mx-auto md:max-w-[1180px] md:px-[40px] md:pb-[32px] md:pt-[40px]">
+      <!-- dwMarker="content" dwContentID="d3eedcbb0bcdf4de2d2eac2075" -->
+      <div class="px-[16px] py-[32px] md:mb-[40px] md:p-0">
+        <ul class="flex flex-col gap-y-[2px] md:grid md:grid-cols-2 md:gap-[4px] lg:md:grid-cols-3">
+          <li>
+            <a href="https://store.wacoal.jp/rf/guide/guide09.html" class="relative flex items-center rounded-[2px] bg-white px-[20px] py-[9px] transition duration-200 ease-[ease] md:px-[28px] md:py-[13px] md:hover:opacity-70">
+              <div class="relative mr-[12px] h-[41px] w-[41px] before:absolute before:inset-[0_-12px_0_auto] before:m-auto before:h-[34px] before:w-[1px] before:bg-gray-e6 md:h-[44px] md:w-[44px]">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dwaf79bc40/asset/images/rn_common/icon_size.svg" alt="" class="absolute inset-[0_0_0_0] m-auto block h-[27px] w-[32px] fill-black-3 md:h-[30px] md:w-[35px]" width="27" height="32">
+              </div>
+              <p class="ml-[12px] text-[12px] font-semibold leading-[1.3846] tracking-[0.08em] md:ml-[16px] md:text-[13px]">
+                サイズ交換・返送料無料！
+              </p>
+              <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" class="absolute inset-[0_16px_0_auto] m-auto block h-[10px] w-[6px] fill-black-3" width="10" height="6">
+            </a>
+          </li>
+          <li>
+            <a href="https://chat.wacoal.jp/front/v1/jsp/view/chat.jsp?domainId=NODE0000000001&parentId=NODE0000000002" class="js-rn-chat relative flex cursor-pointer items-center rounded-[2px] bg-white px-[20px] py-[9px] transition duration-200 ease-[ease] md:px-[28px] md:py-[13px] md:hover:opacity-70">
+              <div class="relative mr-[12px] h-[41px] w-[41px] before:absolute before:inset-[0_-12px_0_auto] before:m-auto before:h-[34px] before:w-[1px] before:bg-gray-e6 md:h-[44px] md:w-[44px]">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw30dedd6e/asset/images/rn_common/icon_chat-footer.svg" alt="" class="absolute inset-[0_0_0_0] m-auto block h-[25px] w-[31px] fill-black-3 md:h-[27px] md:w-[34px]" width="34" height="27">
+              </div>
+              <p class="ml-[12px] text-[12px] font-semibold leading-[1.3846] tracking-[0.08em] md:ml-[16px] md:text-[13px]">
+                チャットで気軽にご相談
+              </p>
+              <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" class="absolute inset-[0_16px_0_auto] m-auto block h-[10px] w-[6px] fill-black-3" width="10" height="6">
+            </a>
+          </li>
+          <li>
+            <a href="https://store.wacoal.jp/size/guide/sizeGuideTop.html" class="relative flex items-center rounded-[2px] bg-white px-[20px] py-[9px] transition duration-200 ease-[ease] md:px-[28px] md:py-[13px] md:hover:opacity-70">
+              <div class="relative mr-[12px] h-[41px] w-[41px] before:absolute before:inset-[0_-12px_0_auto] before:m-auto before:h-[34px] before:w-[1px] before:bg-gray-e6 md:h-[44px] md:w-[44px]">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw11f78048/asset/images/rn_common/icon_footer-measure.svg" alt="" class="absolute inset-[0_0_0_0] m-auto block h-[29px] w-[29px] fill-black-3 md:h-[31px] md:w-[31px]" width="31" height="31">
+              </div>
+              <p class="ml-[12px] text-[12px] font-semibold leading-[1.3846] tracking-[0.08em] md:ml-[16px] md:text-[13px]">
+                サイズの測り方・選び方をご案内
+              </p>
+              <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" class="absolute inset-[0_16px_0_auto] m-auto block h-[10px] w-[6px] fill-black-3" width="10" height="6">
+            </a>
+          </li>
+          <li>
+            <a href="https://store.wacoal.jp/service/mailmagazine.html" class="relative flex items-center rounded-[2px] bg-white px-[20px] py-[9px] transition duration-200 ease-[ease] md:px-[28px] md:py-[13px] md:hover:opacity-70">
+              <div class="relative mr-[12px] h-[41px] w-[41px] before:absolute before:inset-[0_-12px_0_auto] before:m-auto before:h-[34px] before:w-[1px] before:bg-gray-e6 md:h-[44px] md:w-[44px]">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw86d51248/asset/images/rn_common/icon_footer-mail.svg" alt="" class="absolute inset-[0_0_0_0] m-auto block h-[27px] w-[30px] fill-black-3 md:h-[29px] md:w-[32px]" width="29" height="32">
+              </div>
+              <p class="ml-[12px] text-[12px] font-semibold leading-[1.3846] tracking-[0.08em] md:ml-[16px] md:text-[13px]">
+                メール登録でお得にお買い物
+              </p>
+              <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" class="absolute inset-[0_16px_0_auto] m-auto block h-[10px] w-[6px] fill-black-3" width="10" height="6">
+            </a>
+          </li>
+          <li>
+            <a href="https://store.wacoal.jp/rf/guide/guide06.html" class="relative flex items-center rounded-[2px] bg-white px-[20px] py-[9px] transition duration-200 ease-[ease] md:px-[28px] md:py-[13px] md:hover:opacity-70">
+              <div class="relative mr-[12px] h-[41px] w-[41px] before:absolute before:inset-[0_-12px_0_auto] before:m-auto before:h-[34px] before:w-[1px] before:bg-gray-e6 md:h-[44px] md:w-[44px]">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw33c6cf82/asset/images/rn_common/icon_footer-truck.svg" alt="" class="absolute inset-[0_0_0_0] m-auto block h-[25px] w-[32px] fill-black-3 md:h-[27px] md:w-[34px]" width="34" height="27">
+              </div>
+              <p class="ml-[12px] text-[12px] font-semibold leading-[1.3846] tracking-[0.08em] md:ml-[16px] md:text-[13px]">
+                代引き手数料は無料
+                <br>
+                送料は全国一律599円
+                <span class="text-[11px] md:ml-[-0.4em] md:text-[10px]">（税込）</span>
+              </p>
+              <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" class="absolute inset-[0_16px_0_auto] m-auto block h-[10px] w-[6px] fill-black-3" width="10" height="6">
+            </a>
+          </li>
+          <li>
+            <a href="https://store.wacoal.jp/rf/guide/guide02.html" class="relative flex items-center rounded-[2px] bg-white px-[20px] py-[9px] transition duration-200 ease-[ease] md:px-[28px] md:py-[13px] md:hover:opacity-70">
+              <div class="relative mr-[12px] h-[41px] w-[41px] before:absolute before:inset-[0_-12px_0_auto] before:m-auto before:h-[34px] before:w-[1px] before:bg-gray-e6 md:h-[44px] md:w-[44px]">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dwb7c879ed/asset/images/rn_common/icon_footer-point.svg" alt="" class="absolute inset-[0_0_0_0] m-auto block h-[31px] w-[31px] md:h-[33px] md:w-[33px]" width="33" height="33">
+              </div>
+              <p class="ml-[12px] text-[12px] font-semibold leading-[1.3846] tracking-[0.08em] md:ml-[16px] md:text-[13px]">
+                貯まる・使えるポイント
+              </p>
+              <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" class="absolute inset-[0_16px_0_auto] m-auto block h-[10px] w-[6px] fill-black-3" width="10" height="6">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End content-asset -->
+      <div class="px-[16px] py-[20px] md:px-0 md:py-0">
+        <form method="get" name="search_form" action="https://store.wacoal.jp/disp/search" class="rn-searchbox relative mx-auto h-[50px] w-full overflow-hidden rounded-[4px] border border-gray-e6 bg-white md:block md:max-w-[480px]">
+          <input name="q" type="text" maxlength="100" value="" placeholder="すべてのアイテムから探す" autocomplete="off" data-provide="rac" class="h-[114.3%] w-[114.285%] origin-center translate-x-[-6.25%] translate-y-[-6.25%] scale-[0.875] bg-transparent py-[6px] !pl-[54px] pr-[12px] !text-[16px] leading-[1.5] tracking-[0.08em] placeholder-gray-9 placeholder-opacity-100 md:!pl-[58px]" />
+          <div class="absolute left-0 top-0 z-10 grid h-full w-[50px] place-items-center">
+            <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw1a333405/images/rn_common/icon_serch.svg" alt="" class="ml-[2px] block h-[15px] w-[15px]" width="15" height="15">
+            <input type="submit" value="検索" class="absolute left-0 top-0 h-full w-full cursor-pointer text-[0]" />
+          </div>
+        </form>
+      </div>
+      <div class="md:mt-[56px]">
+        <nav id="rn-footer-nav">
+          <div class="md:flex">
+            <div class="max-md:hidden md:m-auto md:flex md:w-full md:max-w-[372px] md:flex-col md:flex-wrap md:gap-y-[24px] lg:m-0 lg:max-w-[798px] lg:flex-row lg:justify-between">
+              <div class="md:mr-[clamp(16px,1.875vw,24px)]">
+                <p class="text-[14px] font-semibold leading-[1.3] tracking-[0.08em]">アイテム</p>
+                <ul class="mt-[16px] grid grid-flow-col grid-cols-[auto_auto] grid-rows-[repeat(11,minmax(0,1fr))] gap-x-[clamp(15px,1.875vw,24px)] gap-y-[11px] md:justify-start">
+                  <!-- dwMarker="content" dwContentID="599d57b3515890c51cadd105bd" -->
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300110/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ブラジャー</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300120/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ショーツ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300113/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ブラジャー&amp;ショーツセット</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300145/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.00em] text-gray-6 hover:underline">ブラトップ・カップ付きインナー</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300125/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ガードル・コントロールボトム</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300135/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ランジェリー</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300140/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">肌着・ニットインナー</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300200/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ソックス・レッグウェア</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300300/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">パジャマ・ルームウェア</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300700/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">アウターウェア</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300210/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">スイムウェア</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300260/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">パンプス・シューズ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300/?gender=4&priceType=%E9%80%9A%E5%B8%B8%E5%95%86%E5%93%81" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">マタニティ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300/?gender=5&priceType=%E9%80%9A%E5%B8%B8%E5%95%86%E5%93%81" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">キッズ・ジュニア</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300650/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">スポーツアイテム</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300895/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ビューティー・コスメ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300150/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">メンズインナーウェア</a>
+                  </li>
+                  <!--<li>
+    <a href="https://store.wacoal.jp/disp/001300300300/?gender=2"
+        class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">メンズパジャマ・ルームウェア</a>
+</li>
+<li>
+    <a href="https://store.wacoal.jp/disp/001300300600/"
+        class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">メンズスポーツウェア</a>
+</li> -->
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/001300300/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">すべてのアイテム</a>
+                  </li>
+                  <!-- End content-asset -->
+                </ul>
+              </div>
+              <div class="md:min-w-[348px]">
+                <p class="text-[14px] font-semibold leading-[1.3] tracking-[0.08em]">ブランド</p>
+                <ul class="mt-[16px] grid grid-flow-col grid-cols-[auto_auto] grid-rows-[repeat(11,auto)] gap-x-[clamp(15px,2.34375vw,30px)] gap-y-[11px] md:justify-start">
+                  <!-- dwMarker="content" dwContentID="2b35f1570e591d590a5f0b3490" -->
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/ourwacoal/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ＯＵＲ　ＷＡＣＯＡＬ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/amphi/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">アンフィ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/wing/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ウイング</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/lesiage/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ウイング／レシアージュ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/unenanacool/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ウンナナクール</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/salute/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">サルート</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/yue/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">Yue</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/yojoy/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ＹＯＪＯＹ </a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/wacoal/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ワコール</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/parfage/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ワコール／パルファージュ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/lasee/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ワコール／ラゼ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/mysize-collection/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ワコールサイズオーダー／<br>My
+                      Size Collection</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/wacoal-weblimited/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ワコール_ウェブ限定</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/wacoal-relax-and-sleep/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ワコール_リラックス&amp;スリープ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/wacoal-maternity/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ワコール_マタニティ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/lovebody/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ワコール／ラブボディ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/bros/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ブロス バイ
+                      ワコールメン</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/cwx/" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">ＣＷ-Ｘ</a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/brand/brandTop" class="color-gray-6 block text-[12px] leading-[1.3] tracking-[0.08em] text-gray-6 hover:underline">すべてのブランド</a>
+                  </li>
+                  <!-- End content-asset -->
+                </ul>
+              </div>
+            </div>
+            <ul class="flex-shrink-0 flex-grow-0 bg-white px-[16px] pb-[16px] max-md:hidden md:ml-[clamp(20px,(100vw-1024px)*44/256+20px,64px)] md:block md:border-l md:bg-transparent md:pb-0 md:pl-[clamp(20px,4.375vw,64px)] md:pr-0">
+              <li class="md:border-rgray-d border-t py-[24px] md:border-t-0 md:py-0">
+                <p class="js-rn-accordion relative text-[15px] font-semibold leading-[1.3] tracking-[0.08em] before:absolute before:bottom-0 before:right-[8px] before:top-0 before:m-auto before:h-[2px] before:w-[10px] before:bg-black-3 after:absolute after:bottom-0 after:right-[12px] after:top-0 after:m-auto after:h-[10px] after:w-[2px] after:bg-black-3 after:transition after:duration-200 after:ease-[ease] md:text-[14px] md:before:hidden md:after:hidden [&.is-active]:after:opacity-0">
+                  会員サービス
+                </p>
+                <ul class="max-h-0 overflow-hidden pl-[8px] transition-[max-height] duration-200 ease-[ease] md:mt-[16px] md:flex md:!max-h-none md:flex-col md:gap-y-[10px] md:pl-0">
+                  <li class="pt-[14px] md:pt-0">
+                    <a href="https://store.wacoal.jp/common/CSfLogin" class="color-gray-6 relative block py-[10px] text-[14px] leading-[1.3] tracking-[0.08em] md:py-0 md:text-[12px] md:text-gray-6 md:hover:underline">ログイン
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/member/memberEntryNew" class="color-gray-6 relative block py-[10px] text-[14px] leading-[1.3] tracking-[0.08em] md:py-0 md:text-[12px] md:text-gray-6 md:hover:underline">新規会員登録
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/coupon/couponList" class="color-gray-6 relative block py-[10px] text-[14px] leading-[1.3] tracking-[0.08em] md:py-0 md:text-[12px] md:text-gray-6 md:hover:underline">ウェブストアクーポン
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/disp/favoritePage" class="color-gray-6 relative block py-[10px] text-[14px] leading-[1.3] tracking-[0.08em] md:py-0 md:text-[12px] md:text-gray-6 md:hover:underline">お気に入り
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="md:border-rgray-d border-t py-[24px] md:mt-[32px] md:border-t-0 md:py-0">
+                <p class="js-rn-accordion relative text-[15px] font-semibold leading-[1.3] tracking-[0.08em] before:absolute before:bottom-0 before:right-[8px] before:top-0 before:m-auto before:h-[2px] before:w-[10px] before:bg-black-3 after:absolute after:bottom-0 after:right-[12px] after:top-0 after:m-auto after:h-[10px] after:w-[2px] after:bg-black-3 after:transition after:duration-200 after:ease-[ease] md:text-[14px] md:before:hidden md:after:hidden [&.is-active]:after:opacity-0">
+                  ヘルプ・お問い合せ
+                </p>
+                <ul class="max-h-0 overflow-hidden pl-[8px] transition-[max-height] duration-200 ease-[ease] md:mt-[16px] md:flex md:!max-h-none md:flex-col md:gap-y-[10px] md:pl-0">
+                  <!-- dwMarker="content" dwContentID="f2ee1ba7278cb32eabf91442a8" -->
+                  <li class="pt-[14px] md:pt-0">
+                    <a href="https://store.wacoal.jp/service/merit.html" class="color-gray-6 textmd:-gray-6 relative block py-[10px] text-[14px] leading-[1.3] tracking-[0.08em] md:py-0 md:text-[12px] md:hover:underline">初めての方へ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/rf/guide/guideTop.html" class="color-gray-6 textmd:-gray-6 relative block py-[10px] text-[14px] leading-[1.3] tracking-[0.08em] md:py-0 md:text-[12px] md:hover:underline">ご利用ガイド
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.wacoal.jp/request/" class="color-gray-6 textmd:-gray-6 relative block py-[10px] text-[14px] leading-[1.3] tracking-[0.08em] md:py-0 md:text-[12px] md:hover:underline">商品に関するご要望
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://faq.wacoal.jp/?site_domain=webstore" class="color-gray-6 textmd:-gray-6 relative block py-[10px] text-[14px] leading-[1.3] tracking-[0.08em] md:py-0 md:text-[12px] md:hover:underline">よくある質問
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/common/inInquiryForm" class="color-gray-6 relative block py-[10px] text-[14px] leading-[1.3] tracking-[0.08em] md:py-0 md:text-[12px] md:text-gray-6 md:hover:underline">お問い合わせ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/guide/morder_guideline.html" class="color-gray-6 relative block py-[10px] text-[14px] leading-[1.3] tracking-[0.08em] md:py-0 md:text-[12px] md:text-gray-6 md:hover:underline">特定商取引法に基づく表記
+                    </a>
+                  </li>
+                  <!-- End content-asset -->
+                </ul>
+              </li>
+            </ul>
+            <ul class="rn-scrollbar-hidden rn-menu-list">
+              <li>
+                <p class="js-rn-accordion">アイテムを探す</p>
+                <ul>
+                  <li>
+                    <p class="js-rn-accordion-sub">
+                      カテゴリーから探す
+                    </p>
+                    <ul>
+                      <!-- dwMarker="content" dwContentID="a449b1268b4b401a979a144c65" -->
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ブラジャー</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300120/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ショーツ</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300113/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ブラジャー&amp;ショーツセット</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300145/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ブラトップ・カップ付きインナー</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300125/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ガードル・コントロールボトム</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300135/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ランジェリー</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300140/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">肌着・ニットインナー</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300200/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ソックス・レッグウェア</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300300/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">パジャマ・ルームウェア</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300700/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アウターウェア</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300210/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">スイムウェア</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300260/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">パンプス・シューズ</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?gender=4&priceType=%E9%80%9A%E5%B8%B8%E5%95%86%E5%93%81">マタニティ
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?gender=5&priceType=%E9%80%9A%E5%B8%B8%E5%95%86%E5%93%81">キッズ・ジュニア
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300650/">スポーツアイテム
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300895/">ビューティー・コスメ
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300150/">メンズインナーウェア
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                      </li>
+                      <!--<li>
+    <a href="https://store.wacoal.jp/disp/001300300300/?gender=2">メンズパジャマ・ルームウェア
+        <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+</li>
+ <li>
+    <a href="https://store.wacoal.jp/disp/001300300600/">メンズスポーツウェア
+        <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+</li> -->
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/">すべてのアイテムを見る
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                      </li>
+                      <!-- End content-asset -->
+                    </ul>
+                  </li>
+                  <li>
+                    <p class="js-rn-accordion-sub">
+                      ブランドから探す
+                    </p>
+                    <ul>
+                      <!-- dwMarker="content" dwContentID="3be3e704a877d4d02cf8778cf9" -->
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/ourwacoal/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ＯＵＲ　ＷＡＣＯＡＬ </a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/amphi/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンフィ</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/wing/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ウイング</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/lesiage/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ウイング／レシアージュ</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/unenanacool/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ウンナナクール</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/salute/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">サルート</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/yue/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Yue</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/yojoy/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ＹＯＪＯＹ </a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/wacoal/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ワコール</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/parfage/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ワコール／パルファージュ</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/lasee/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ワコール／ラゼ</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/mysize-collection/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ワコールサイズオーダー／My Size Collection</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/wacoal-weblimited/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ワコール_ウェブ限定</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/wacoal-relax-and-sleep/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ワコール_リラックス＆スリープ</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/wacoal-maternity/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ワコール_マタニティ</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/lovebody/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ワコール／ラブボディ</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/bros/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">ブロス バイ ワコールメン</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/cwx/">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">CW-X</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/brand/brandTop">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">すべてのブランドを見る</a>
+                      </li>
+                      <!-- End content-asset -->
+                    </ul>
+                  </li>
+                  <li>
+                    <p class="js-rn-accordion-sub">
+                      カップサイズから探す
+                    </p>
+                    <ul>
+                      <!-- dwMarker="content" dwContentID="cb400ae5366496d4e64b09ed57" -->
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=AAA">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">AAAカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=AA">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">AAカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=A">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Aカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=B">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Bカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=C">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Cカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=D">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Dカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=E">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Eカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=F">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Fカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=G">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Gカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=H">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Hカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=I">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Iカップ</a>
+                      </li>
+                      <li><a href="https://store.wacoal.jp/disp/001300300/?cupSize=J">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">Jカップ</a>
+                      </li>
+                      <!-- End content-asset -->
+                    </ul>
+                  </li>
+                  <li>
+                    <p class="js-rn-accordion-sub">
+                      アンダーサイズから探す
+                    </p>
+                    <ul>
+                      <!-- dwMarker="content" dwContentID="c4d6b86c60605cb7960391aa01" -->
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=60">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー60</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=65">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー65</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=70">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー70</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=75">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー75</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=80">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー80</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=85">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー85</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=90">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー90</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=95">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー95</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=100">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー100</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=105">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー105</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300110/?prefn1=txBraSize&amp;prefv1=110">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">アンダー110</a>
+                      </li>
+                      <!-- End content-asset -->
+                    </ul>
+                  </li>
+                  <li>
+                    <p class="js-rn-accordion-sub">
+                      価格から探す
+                    </p>
+                    <ul>
+                      <!-- dwMarker="content" dwContentID="b3e065e9ab60f1c4553a574bfe" -->
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?pmin=0&amp;pmax=1000">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">～1,000円</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?pmin=1001&amp;pmax=2000">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">1,000円 ～ 2,000円</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?pmin=2001&amp;pmax=3000">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">2,000円 ～ 3,000円</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?pmin=3001&amp;pmax=5000">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">3,000円 ～ 5,000円</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?pmin=5001&amp;pmax=7000">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">5,000円 ～ 7,000円</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?pmin=7001&amp;pmax=10000">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">7,000円 ～ 10,000円</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?pmin=10001&amp;pmax=15000">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">10,000円 ～ 15,000円</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?pmin=15001&amp;pmax=20000">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">15,000円 ～ 20,000円</a>
+                      </li>
+                      <li>
+                        <a href="https://store.wacoal.jp/disp/001300300/?pmin=20000">
+                          <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">20,000円 ～</a>
+                      </li>
+                      <!-- End content-asset -->
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/ranking?p=top1&amp;tab=1">ランキングから探す
+                      <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw834bed46/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/outlet/outletTop" class="block py-[10px] transition duration-200 ease-[ease] md:hover:opacity-70">セールから探す<img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw834bed46/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://store.wacoal.jp/topics/topicsTop">
+                  トピックス
+                  <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw834bed46/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">
+                </a>
+              </li>
+              <li>
+                <a href="https://store.wacoal.jp/contents/chiebukuro/index.html">
+                  キレイの知恵袋
+                  <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw834bed46/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">
+                </a>
+              </li>
+              <li>
+                <p class="js-rn-accordion">
+                  スタッフレビュー
+                </p>
+                <ul>
+                  <li>
+                    <a href="/staffreview/staffreviewTop?sort_review=pv">人気レビュー<img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw834bed46/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                  <li>
+                    <a href="/staffreview/staffreviewTop?sort_staff=pv&amp;first_view=staff">人気スタッフ<img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw834bed46/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                  <li>
+                    <a href="/staffreview/staffreviewTop?sort_review=time">すべてのレビューを見る<img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw834bed46/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="/size/guide/sizeGuideTop.html">
+                  サイズガイド
+                  <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw834bed46/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">
+                </a>
+              </li>
+              <li>
+                <p class="js-rn-accordion">ウェブストアのメリット</p>
+                <ul>
+                  <!-- dwMarker="content" dwContentID="cb198e0d52a856bae4f2210e42" -->
+                  <li>
+                    <a href="https://store.wacoal.jp/service/merit.html">便利なサービス<img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/service/mailmagazine.html">お得なメールニュース<img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                  <!-- End content-asset -->
+                </ul>
+              </li>
+              <li>
+                <a href="https://www.wacoal.jp/shops/" target="_blank" rel="noopener">
+                  店舗検索
+                  <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw834bed46/images/rn_common/icon_arrow.svg" alt="" width="10" height="6">
+                </a>
+              </li>
+              <li>
+                <p class="js-rn-accordion">ヘルプ・お問い合せ</p>
+                <ul>
+                  <!-- dwMarker="content" dwContentID="4b0165bab29b04d99b81ca57c7" -->
+                  <li>
+                    <a href="https://store.wacoal.jp/service/merit.html">初めての方へ<img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                  <li>
+                    <a href="https://store.wacoal.jp/rf/guide/guideTop.html">ご利用ガイド<img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.wacoal.jp/request/">商品に関するご要望<img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                  <li>
+                    <a href="https://faq.wacoal.jp/?site_domain=webstore">よくある質問<img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                  <!-- <li>
+    <a href="https://store.wacoal.jp/common/inInquiryForm">お問い合わせ<img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+</li> -->
+                  <li>
+                    <a href="https://store.wacoal.jp/guide/morder_guideline.html">特定商取引法に基づく表記<img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3f7fad1c/asset/images/rn_common/icon_arrow.svg" alt="" width="10" height="6"></a>
+                  </li>
+                  <!-- End content-asset -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="border-d mt-[32px] border-b border-t max-md:hidden md:block">
+            <ul class="flex justify-between py-[24px] md:mx-auto md:max-w-[824px]">
+              <li>
+                <a href="https://store.wacoal.jp/ranking" class="block text-[14px] leading-[1.5] tracking-[0.08em] hover:underline">ランキング</a>
+              </li>
+              <li>
+                <a href="https://store.wacoal.jp/outlet/outletTop" class="block text-[14px] leading-[1.5] tracking-[0.08em] hover:underline">セール</a>
+              </li>
+              <li>
+                <a href="https://store.wacoal.jp/topics/topicsTop" class="block text-[14px] leading-[1.5] tracking-[0.08em] hover:underline">トピックス</a>
+              </li>
+              <li>
+                <a href="https://store.wacoal.jp/contents/chiebukuro/index.html" class="block text-[14px] leading-[1.5] tracking-[0.08em] hover:underline">キレイの知恵袋</a>
+              </li>
+              <li>
+                <a href="/staffreview/staffreviewTop?sort_review=pv" class="block text-[14px] leading-[1.5] tracking-[0.08em] hover:underline">スタッフレビュー</a>
+              </li>
+              <li>
+                <a href="/size/guide/sizeGuideTop.html" class="block text-[14px] leading-[1.5] tracking-[0.08em] hover:underline">サイズガイド</a>
+              </li>
+            </ul>
+          </div>
+          <!-- dwMarker="content" dwContentID="61f3864e589b4c9e1a1a852b64" -->
+          <div class="pb-[32px] pt-[32px] md:flex md:flex-wrap md:justify-center md:gap-x-[24px] md:gap-y-[24px] md:pb-0">
+            <div class="md:flex md:items-center md:gap-x-[30px]">
+              <p class="text-center font-lato text-[18px] font-semibold leading-[1] md:text-left md:text-[16px]">
+                FOLLOW US
+              </p>
+              <ul class="mt-[20px] flex justify-center gap-x-[20px] md:mt-0 md:justify-start">
+                <li>
+                  <a href="https://www.instagram.com/wacoal_webstore/" target="_blank" rel="noopener" class="grid h-[48px] w-[48px] place-items-center rounded-[50%] bg-white transition-opacity duration-200 ease-[ease] hover:opacity-70">
+                    <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw28006a8b/asset/images/rn_common/icon_instagram.svg" alt="" class="block h-[15px] w-[15px]" width="15" height="15">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/store.wacoal.jp" target="_blank" rel="noopener" class="grid h-[48px] w-[48px] place-items-center rounded-[50%] bg-white transition-opacity duration-200 ease-[ease] hover:opacity-70">
+                    <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw503e268f/asset/images/rn_common/icon_facebook.svg" alt="" class="block h-[16px] w-[16px]" width="16" height="16">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Wacoal_webstore" target="_blank" rel="noopener" class="grid h-[48px] w-[48px] place-items-center rounded-[50%] bg-white transition-opacity duration-200 ease-[ease] hover:opacity-70">
+                    <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw5211b0f3/asset/images/rn_common/icon_x.svg" alt="" class="block w-[15px]" width="15" height="15.3">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://page.line.me/wacoal" target="_blank" rel="noopener" class="grid h-[48px] w-[48px] place-items-center rounded-[50%] bg-white transition-opacity duration-200 ease-[ease] hover:opacity-70">
+                    <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dwd20b7a63/asset/images/rn_common/icon_line.svg" alt="" class="block h-[17px] w-[18px]" width="18" height="17">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-[20px] md:mt-0 md:flex">
+              <a href="https://store.wacoal.jp/service/mailmagazine.html" class="flex items-center justify-center gap-x-[10px] font-lato text-[12px] font-semibold transition-opacity duration-200 ease-[ease] hover:opacity-70 md:justify-start"><img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dwee4cb429/asset/images/rn_common/icon_mail.svg" alt="" class="block h-[12px] w-[16px]" width="16" height="12">WEB STORE MAIL NEWS</a>
+              <span class="mx-[16px] h-[20px] w-[1px] self-center bg-gray-d max-md:hidden md:block"></span>
+              <a href="https://apl.wacoal.jp/carnet/lp/app_dl.html" class="relative mt-[16px] flex items-center justify-center gap-x-[10px] font-lato text-[12px] font-semibold transition-opacity duration-200 ease-[ease] hover:opacity-70 md:mt-0 md:justify-start"><img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dwe999e7f7/asset/images/rn_common/icon_smartphone.svg" alt="" class="block h-[17px] w-[12px]" width="12" height="17">OFFICIAL APP WACOAL CARNET</a>
+            </div>
+          </div>
+          <!-- End content-asset -->
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black-3 text-white">
+    <div class="mx-auto md:max-w-[1180px] md:px-[40px] md:pb-[36px] md:pt-[32px]">
+      <div class="px-[30px] pt-[40px] md:px-0 md:pt-0">
+        <div class="md:flex md:items-center md:justify-center">
+          <!-- dwMarker="content" dwContentID="4d430afe9316055a6a4b758878" -->
+          <p class="flex-shrink-0 text-center font-lato text-[18px] font-semibold leading-[1] md:text-left md:text-[13px]">
+            WACOAL GROUP SITE
+          </p>
+          <ul class="relative mt-[24px] flex flex-wrap justify-center gap-x-[25px] gap-y-[20px] before:absolute before:bottom-0 before:left-0 before:top-0 before:m-auto before:hidden before:h-[20px] before:w-[1px] before:bg-gray-4f md:ml-[24px] md:mt-0 md:items-center md:justify-start md:gap-x-[34px] md:gap-y-[12px] md:pl-[24px] md:before:block">
+            <li>
+              <a href="https://www.peachjohn.co.jp/" target="_blank" rel="noopener" class="block h-[13px] w-[110px] transition-opacity duration-200 ease-[ease] hover:opacity-70">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw5011e5ee/asset/images/rn_common/logo_peachjohn.svg" alt="PEACH JOHN"></a>
+            </li>
+            <li>
+              <a href="https://www.houseofrose.co.jp/" target="_blank" rel="noopener" class="block h-[18px] w-[120px] transition-opacity duration-200 ease-[ease] hover:opacity-70">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw3d48add0/asset/images/rn_common/logo_house-of-rose.svg" alt="HOUSE OF ROSE"></a>
+            </li>
+            <li>
+              <a href="https://www.san-ai.com/" target="_blank" rel="noopener" class="relative top-[-3px] block h-[22px] w-[38px] transition-opacity duration-200 ease-[ease] hover:opacity-70">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw688e522c/asset/images/rn_common/logo_ai.svg" alt="Ai"></a>
+            </li>
+            <li>
+              <a href="https://www.spiral.co.jp/" target="_blank" rel="noopener" class="block h-[21px] w-[58px] transition-opacity duration-200 ease-[ease] hover:opacity-70">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dw9175241e/asset/images/rn_common/logo_spiral.svg" alt="SPIRAL"></a>
+            </li>
+          </ul>
+          <!-- End content-asset -->
+        </div>
+        <div class="mt-[32px] border-t border-gray-4 pt-[32px] md:mt-[24px] md:flex md:items-center md:justify-center md:border-none md:pt-0">
+          <!-- dwMarker="content" dwContentID="27ec83c97a7a8b8a41eaa90948" -->
+          <p class="text-center font-lato text-[18px] font-semibold leading-[1] md:text-left md:text-[13px]">
+            ONLINE STORE
+          </p>
+          <ul class="relative mt-[24px] flex items-center justify-center gap-x-[25px] pl-[3px] before:absolute before:bottom-0 before:left-0 before:top-0 before:m-auto before:hidden before:h-[20px] before:w-[1px] before:bg-gray-4f md:ml-[24px] md:mt-0 md:justify-start md:gap-x-[34px] md:pl-[24px] md:before:block">
+            <li>
+              <a href="https://store.wacoal.jp/" class="block max-w-[160px] leading-[1] transition-opacity duration-200 ease-[ease] hover:opacity-70">
+                <img src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/dwf612f3df/asset/images/rn_common/logo_wacoal-web-store.svg" alt="WACOAL WEB STORE" width="160" height="10"></a>
+            </li>
+          </ul>
+          <!-- End content-asset -->
+        </div>
+      </div>
+      <div class="mt-[32px] flex flex-col border-t border-gray-4f pb-[32px] pt-[40px] text-center md:flex-row md:items-center md:justify-between md:gap-x-[20px] md:pb-0 md:pt-[30px] md:text-left">
+        <div class="contents md:block md:flex-shrink-0">
+          <a href="https://www.wacoal.jp/" target="_blank" rel="noopener" class="order-1 mx-auto block h-[21px] w-[156px] md:mx-0">
+            <img src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw866c50b3/images/rn_common/logo_wacoal.svg" alt="WACOAL">
+          </a>
+          <p class="order-3 mt-[60px] font-lato text-[10px] text-gray-9 md:mt-[16px]">
+            &copy; WACOAL CORP. ALL RIGHTS RESERVED.
+          </p>
+        </div>
+        <nav id="rn-footer-logo" class="order-2 mt-[32px] md:mt-0">
+          <ul class="lg:max-w-auto flex flex-col flex-wrap gap-y-[16px] md:max-w-[360px] md:flex-row md:justify-end md:gap-x-[20px] md:gap-y-[8px] lg:max-w-none">
+            <li>
+              <a href="https://www.wacoal.jp/" target="_blank" rel="noopener" class="block text-[12px] leading-[1.5] tracking-[0.08em] hover:underline">ワコールホーム</a>
+            </li>
+            <li>
+              <a href="https://www.wacoalholdings.jp/" target="_blank" rel="noopener" class="block text-[12px] leading-[1.5] tracking-[0.08em] hover:underline">企業情報</a>
+            </li>
+            <li>
+              <a href="https://store.wacoal.jp/terms/membership.html" class="block text-[12px] leading-[1.5] tracking-[0.08em] hover:underline">ワコールメンバーズ利用規約</a>
+            </li>
+            <li>
+              <a href="https://www.wacoal.jp/privacy/index.html" target="_blank" rel="noopener" class="block text-[12px] leading-[1.5] tracking-[0.08em] hover:underline">個人情報保護方針</a>
+            </li>
+            <li>
+              <a href="https://www.wacoal.jp/legal/" target="_blank" rel="noopener" class="block text-[12px] leading-[1.5] tracking-[0.08em] hover:underline">お願いとご注意</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--[if gte IE 9 | !IE]><!-->
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/lib/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<!--<![endif]-->
+<!--[if lte IE 8]>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/lib/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="//cdn.rawgit.com/weblinc/media-match/master/media.match.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<script src="//cdn.rawgit.com/paulirish/matchMedia.js/master/matchMedia.js" type="text/javascript"></script>
+<script src="//cdn.rawgit.com/paulirish/matchMedia.js/master/matchMedia.addListener.js" type="text/javascript"></script>
+<![endif]-->
+<!-- Wacoal 共通JS -->
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/js/r2_plugin.js"></script>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/js/r2_common.js"></script>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/js/r2_module.js"></script>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/js/asset_common.js"></script>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/js/r2_searchF.js"></script>
+<script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script defer src="https://store.wacoal.jp/on/demandware.static/-/Sites-StoreWacoal-Library/ja_JP/v1775020759542/./bratop_collection/js/bratop_250401.js"></script>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/lib/jquery/jquery.jcarousel.min.js" type="text/javascript"></script>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/lib/jquery/ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/lib/jquery/jquery.validate.min.js" type="text/javascript"></script>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/lib/jquery/jquery.zoom.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    window.Constants = { "AVAIL_STATUS_IN_STOCK": "IN_STOCK", "AVAIL_STATUS_PREORDER": "PREORDER", "AVAIL_STATUS_BACKORDER": "BACKORDER", "AVAIL_STATUS_NOT_AVAILABLE": "NOT_AVAILABLE" };
+    window.Resources = { "I_AGREE": "同意する", "TRACKING_CONSENT": "Yes", "TRACKING_NO_CONSENT": "No", "CLOSE": "閉じる", "NO_THANKS": "いいえ、必要ありません", "OK": "OK", "ARE_YOU_HUMAN": "あなたは人間ですか？", "SHIP_QualifiesFor": "この配送ではこちらをご利用いただけます:", "CC_LOAD_ERROR": "クレジットカードを読み込めませんでした!", "COULD_NOT_SAVE_ADDRESS": "Could not save address. Please check your entries and try again.", "REG_ADDR_ERROR": "住所を読み込めませんでした。", "BONUS_PRODUCT": "ボーナス商品", "BONUS_PRODUCTS": "ボーナス商品", "SELECT_BONUS_PRODUCTS": "ボーナス商品を選択する", "SELECT_BONUS_PRODUCT": "product.selectbonusproduct", "BONUS_PRODUCT_MAX": "選択したボーナス商品が最大数に達しています。1 個削除してから別のボーナス商品を追加してください。", "BONUS_PRODUCT_TOOMANY": "選択したボーナス商品の数が多すぎます。数量を変更してください。", "SIMPLE_SEARCH": "キーワードまたは商品番号を入力", "SUBSCRIBE_EMAIL_DEFAULT": "メールアドレスアドレス", "CURRENCY_SYMBOL": "¥", "MISSINGVAL": "{0} を入力してください", "SERVER_ERROR": "サーバーに接続できませんでした!", "MISSING_LIB": "jQuery が定義されていません。", "BAD_RESPONSE": "不正な応答、解析エラー!", "BODY_DIAGNOSIS_SERVER_ERROR": "通信中にエラーが発生しました。お手数ですが、インターネット接続をご確認のうえ、再度お試しください。", "INVALID_PHONE": "有効な電話番号を指定してください。", "REMOVE": "削除", "QTY": "数量", "EMPTY_IMG_ALT": "削除", "COMPARE_BUTTON_LABEL": "商品を比較する", "COMPARE_CONFIRMATION": "これにより、比較のために追加された最初の商品が削除されます。実行してもよろしいですか?", "COMPARE_REMOVE_FAIL": "リストから商品を削除できません", "COMPARE_ADD_FAIL": "リストに商品を追加できません", "ADD_TO_CART_FAIL": "買い物カゴに商品 '{0}' を追加できません", "REGISTRY_SEARCH_ADVANCED_CLOSE": "詳細検索を閉じる", "GIFT_CERT_INVALID": "ギフト券コードが無効です。", "GIFT_CERT_BALANCE": "現在のギフト券残高:", "GIFT_CERT_AMOUNT_INVALID": "ギフト券は最低 5、最高 5000 の範囲でしか購入できません。", "GIFT_CERT_MISSING": "ギフト券コードを入力してください。", "INVALID_OWNER": "これはクレジットカード番号のようです。クレジットカード名義人のお名前を入力してください。", "COUPON_CODE_MISSING": "クーポンコードを入力してください。", "COOKIES_DISABLED": "お使いのブラウザーでは、Cookie が許可されていません。この機能をオンにするか、または別のプログラムで Cookie をブロックする設定を使用していないかどうかを確認してください。", "BML_AGREE_TO_TERMS": "条件に同意していただく必要があります", "CHAR_LIMIT_MSG": "残り {0} 文字で {1} 文字の制限に達します。", "CONFIRM_DELETE": "この {0} を削除しますか?", "TITLE_GIFTREGISTRY": "ギフトレジストリ", "TITLE_ADDRESS": "住所", "TITLE_CREDITCARD": "クレジットカード", "SERVER_CONNECTION_ERROR": "サーバーに接続できませんでした!", "IN_STOCK_DATE": "入荷予定日は {0} です。", "ITEM_STATUS_NOTAVAILABLE": "この商品は現在ご購入いただけません。", "INIFINITESCROLL": "すべて表示", "STORE_NEAR_YOU": "お近くの店舗で入手可能かどうかを検索", "SELECT_STORE": "店舗の選択", "SELECTED_STORE": "選択された店舗", "PREFERRED_STORE": "優先店舗", "SET_PREFERRED_STORE": "優先店舗を設定", "ENTER_ZIP": "郵便番号の入力", "INVALID_ZIP": "有効な郵便番号を入力してください", "SEARCH": "検索", "CHANGE_LOCATION": "場所の変更", "CONTINUE_WITH_STORE": "優先店舗で続行", "CONTINUE": "次に進む", "SEE_MORE": "店舗数を増やす", "SEE_LESS": "店舗数を減らす", "QUICK_VIEW": "クイックビュー", "QUICK_VIEW_POPUP": "商品のクイックビュー", "TLS_WARNING": "当社ではお客様のセキュリティについて真剣に取り組んでいます。<br/>お客様が古いブラウザーを使用していることが検出されました。<br/>安全なショッピングをお楽しみいただくために、ブラウザーを更新してください。", "CSRF_TOKEN_MISMATCH": "CSRF Token mismatch", "VALIDATE_REQUIRED": "を入力してください", "VALIDATE_REMOTE": "このフィールドを修正してください", "VALIDATE_EMAIL": "有効な メールアドレスアドレスを入力してください", "VALIDATE_URL": "有効な URL を入力してください", "VALIDATE_DATE": "有効な日付を入力してください", "VALIDATE_DATEISO": "有効な日付を入力してください (ISO)", "VALIDATE_NUMBER": "有効な数値を入力してください", "VALIDATE_DIGITS": "数字のみを入力してください", "VALIDATE_CREDITCARD": "有効なクレジットカード番号を入力してください", "VALIDATE_EQUALTO": "同じ値をもう一度入力してください", "VALIDATE_MAXLENGTH": "は{0} 文字以下の文字数で入力してください", "VALIDATE_MINLENGTH": "は最低 {0} 文字入力してください", "VALIDATE_RANGELENGTH": "は{0} ～ {1} 文字の値を入力してください", "VALIDATE_RANGE": "は{0} ～ {1} の値を入力してください", "VALIDATE_MAX": "は{0} 以下の値を入力してください", "VALIDATE_MIN": "は{0} 以上の値を入力してください", "PLEASE_SELECT": "お選びください", "DETAIL_OPEN": "詳細を開く", "DETAIL_CLOSE": "詳細を閉じる", "INFO_OPEN": "続きを見る", "INFO_CLOSE": "表示を少なくする", "CARD_MSG_LOCK_SUCCESS": "ロック成功", "CARD_MSG_LOCK_FAIL": "ロック失敗", "CARD_MSG_UNLOCK_SUCCESS": "成功のロックを解除", "CARD_MSG_UNLOCK_FAIL": "ロック解除に失敗しました", "STAFFREVIEW_STAFF": "staff", "STAFFREVIEW_REVIEW": "review", "STAFFSTART_API_ERROR": "データ連携にエラーが発生しました。", "IN_STOCK": "在庫あり", "QTY_IN_STOCK": "{0} 点在庫あり", "PREORDER": "予約販売", "QTY_PREORDER": "予約販売が可能な個数は {0} 個です。", "REMAIN_PREORDER": "残りの商品については、予約販売をご利用いただけます。", "BACKORDER": "取り寄せ", "QTY_BACKORDER": "取り寄せ {0} 個", "REMAIN_BACKORDER": "残りの商品については、お取り寄せが可能です。", "NOT_AVAILABLE": "この商品は現在ご購入いただけません。", "REMAIN_NOT_AVAILABLE": "残りの商品については、現在ご購入いただけません。数量を変更してください。" };
+    window.Urls = { "appResources": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Resources-Load", "pageInclude": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Page-Include", "continueUrl": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Page-Show", "staticPath": "https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/", "addGiftCert": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/GiftCert-Purchase", "minicartGC": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/GiftCert-ShowMiniCart", "addProduct": "/disp/cartAddProduct", "minicart": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Cart-MiniAddProduct", "cartShow": "/disp/viewCartLink", "giftRegAdd": "https://store.wacoal.jp/member/memberGetAddressDetails", "paymentsList": "https://store.wacoal.jp/payment/instrumentsList", "addressesList": "https://store.wacoal.jp/member/memberAddrEntryEdit", "wishlistAddress": "https://store.wacoal.jp/disp/favoriteItemDeliverySet", "deleteAddress": "/member/memberDelete", "getProductUrl": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Product-Show", "getBonusProducts": "/product/GetBonusProducts", "addBonusProduct": "/disp/cartAddBonusProduct", "getSetItem": "/product/GetSetItem", "productDetail": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Product-Detail", "getAvailability": "/product/GetAvailability", "removeImg": "https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dwe57572f8/images/icon_remove.gif", "searchsuggest": "/search/GetSuggestions", "productNav": "/product/Productnav", "summaryRefreshURL": "/order/paymentUpdateSummary", "billingSelectCC": "https://store.wacoal.jp/order/paymentSelectCreditCard", "updateAddressDetails": "https://store.wacoal.jp/order/shippingUpdateAddressDetails", "updateAddressDetailsBilling": "https://store.wacoal.jp/order/paymentUpdateAddressDetails", "shippingMethodsJSON": "https://store.wacoal.jp/order/shippingGetApplicableShippingMethodsJSON", "shippingMethodsList": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/COShipping-UpdateShippingMethodList", "selectShippingMethodsList": "https://store.wacoal.jp/order/shippingSelectShippingMethod", "resetPaymentForms": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/COBilling-ResetPaymentForms", "billingCouponlistRegist": "/order/paymentRegistCoupon", "compareShow": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Compare-Show", "compareAdd": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Compare-AddProduct", "compareRemove": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Compare-RemoveProduct", "compareEmptyImage": "https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/default/dw227ff518/images/comparewidgetempty.png", "giftCardCheckBalance": "https://store.wacoal.jp/order/paymentGetGiftCertificateBalance", "redeemGiftCert": "https://store.wacoal.jp/order/paymentRedeemGiftCertificateJson", "addCoupon": "https://store.wacoal.jp/disp/cartAddCouponJson", "storesInventory": "/store/inventoryInventory", "storesInventorySearch": "/store/inventorySearch", "setPreferredStore": "/store/inventorySetPreferredStore", "getPreferredStore": "/store/inventoryGetPreferredStore", "setStorePickup": "/store/inventorySetStore", "setZipCode": "/store/inventorySetZipCode", "getZipCode": "/store/inventoryGetZipCode", "billing": "/order/paymentInfo", "setSessionCurrency": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Currency-SetSessionCurrency", "addEditAddress": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/COShippingMultiple-AddEditAddressJSON", "cookieHint": "/cookie_hint.html", "consentTracking": "/consent_tracking_hint.html", "consentTrackingSetSession": "/member/personalConsentTracking", "rateLimiterReset": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/RateLimiter-HideCaptcha", "csrffailed": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/CSRF-Failed", "redirectTo3dsecure": "/sonypayment/RedirectTo3dsecure", "cartAddFavoriteProduct": "/disp/cartAddFavoriteProduct", "postalCodeBoxSearch": "/common/PostalCodeBoxSearch", "postalGetAddressAjax": "/common/PostalCodeGetAddressAjax", "getVariationInventoryStatus": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Product-GetVariationInventoryStatus", "productAddRefer": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Product-AddRefer", "purchaseShowMore": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Purchase-ShowMore", "accountGetAuthCode": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Account-GetAuthCode", "premiumMovieGoodCount": "/member/wwspsMovieGood", "couponlistRegistCouponlist": "/coupon/registCoupon", "getStaffReviewInfo": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Home-GetStaffReviewInfo", "getProductStaffReview": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Product-GetStaffReviewList", "filterReviewList": "/staffreview/staffreviewTop", "systemError": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Error-Start", "memberUpdateHankakuZenkaku": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Account-MemberUpdateHankakuZenkaku", "productAddDeleteFavProduct": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Product-AddDeleteFavoriteProduct", "rankingShow": "/ranking", "contentHelpful": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Home-HideHelpful", "paypaySubmit": "https://store.wacoal.jp/order/orderSubmitP", "getBrandStaffReview": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Search-GetStaffReviewInfo", "removeSearchHst": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Search-RemoveSearchHst", "getFavoriteSkuModal": "/product/showFavoriteModal", "getLogin": "/common/CSfLogin", "getSearchUrl": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Search-GetSearchUrl", "diagnosisGroupJudgement": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/BodyDiagnosisCommon-GroupJudgement", "selfcheck_type1": "/brashindan/result/selfcheck_type1a.html", "selfcheck_type2": "/brashindan/result/selfcheck_type2a.html", "selfcheck_type3": "/brashindan/result/selfcheck_type3a.html", "selfcheck_type4": "/brashindan/result/selfcheck_type4a.html", "selfcheck_type5": "/brashindan/result/selfcheck_type1b.html", "selfcheck_type6": "/brashindan/result/selfcheck_type2b.html", "selfcheck_type7": "/brashindan/result/selfcheck_type3b.html", "selfcheck_type8": "/brashindan/result/selfcheck_type4b.html", "cartIncludesExcGoodsCode": "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/Cart-IncludesExclusionGoodsCode" };
+    window.SitePreferences = { "LISTING_INFINITE_SCROLL": false, "LISTING_REFINE_SORT": true, "STORE_PICKUP": true, "COOKIE_HINT": false, "CONSENT_TRACKING_HINT": false, "CHECK_TLS": false, "STAFF_START_MARCHANTID": null };
+  }());
+</script>
+<script type="text/javascript">
+  (function () {
+    window.SessionAttributes = { "SHOW_CAPTCHA": null };
+    window.User = { "zip": null, "storeId": null };
+  }());
+</script>
+<script>var consent = null;</script>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/js/search_refinements.js"></script>
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/js/app.js"></script>
+<script>pageContext = {};</script>
+<script>
+  var meta = "&amp;ldquo;ラクしてきれい&amp;rdquo;を目指すなら下着メーカーのブラトップ！ここちよいフィット感はキープしながらも、かたちや素材にこだわったブラトップアイテムを豊富にご紹介。あなたにあった１枚がきっと見つかる&amp;#9834;";
+  var keywords = "ブラトップ,タンクトップ,大きいサイズ,綿１００,おすすめ,人気,長袖";
+</script>
+<script>
+  <!-
+  function doEnterSearch(e) {
+  if (e.which) {
+  if (e.keyCode == 13) {
+  searchResult();
+  }
+  } else {
+  if (window.event.keyCode == 13) {
+  searchResult();
+  }
+  }
+  }
+  function searchResult(){
+  document.search_form.submit();
+  }
+   ->
+</script>
+<script type="text/javascript" src="https://static.staff-start.com/js/track/v3.0/staffstart.min.js"></script>
+<script>
+  const ss_external = {
+    user_id: "",
+    session_id: "",
+  };
+  staffStart.external.sendTrackingRequest("4829ac7b1ad51914547e16c0968d37c3", ss_external);
+</script>
+<!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
+<script type="text/javascript">//<!-
+  /* <![CDATA[ */
+  function trackPage() {
+    try {
+      var trackingUrl = "https://store.wacoal.jp/on/demandware.store/Sites-StoreWacoal-Site/ja_JP/__Analytics-Start";
+      var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+      if (typeof dw.ac == "undefined") {
+        dwAnalytics.trackPageView();
+      } else {
+        dw.ac.setDWAnalytics(dwAnalytics);
+      }
+    } catch (err) { };
+  }
+  /* ]]> */
+  // -->
+</script>
+<script type="text/javascript" src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<!-- Demandware Active Data (body_end-active_data.js) -->
+<script src="https://store.wacoal.jp/on/demandware.static/Sites-StoreWacoal-Site/-/ja_JP/v1775020759542/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9e5c6c337abed3f6","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.9.1","token":"256aed1c8ca144238840370929872679"}' crossorigin="anonymous"></script>

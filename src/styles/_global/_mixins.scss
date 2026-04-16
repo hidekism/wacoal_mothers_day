@@ -1,0 +1,135 @@
+
+@use "sass:math";
+$max-width: 1280; // 最大コンテンツ幅
+$min-width: 375; // スマホの画面幅
+
+$base-font-size: 16; // ベースのフォントサイズ
+
+//* -----------------------------------------------------------------------
+//## 関数 ##################################################
+//----------------------------------------------------------------------- */
+// 除算
+@function div($value1, $value2) {
+  @return math.div($value1, $value2);
+}
+
+// px->rem変換
+@function rem($value) {
+  @return calc(div(#{$value}, #{$base-font-size}) * 1rem);
+}
+
+// px->vw変換
+@function vw($value, $base-width: 375) {
+  @return calc(div(#{$value}, $base-width) * 100vw);
+}
+
+// px->%変換
+@function per($value, $container-width) {
+  @return calc(div(#{$value}, $container-width) * 100%);
+}
+
+// px->cqw変換
+@function cqw($value, $container-width: 375) {
+  @return calc(div(#{$value}, $container-width) * 100cqw);
+}
+
+
+//**
+// * 特定のウィンドウサイズ間で値を可変させる。
+// *
+// * @param {Number} $min $min-winの時の値。必須
+// * @param {Number} $max $max-winの時の値。必須
+// * @param {Number} $min-win 値が最小になるときの画面幅
+// * @param {Number} $max-win 値が最大になるときの画面幅
+// * @return {string} clampが返る
+// *
+// * @example
+// * 例1: 375px以下の時は10px、768px以上の時は20px、それ以外の時は可変する（375px、768pxはそれぞれデフォルト引数の値）
+// * font-size: fluid(10,20);
+// * 例2: 375px以下の時は20px、768px以上の時は10px、それ以外の時は可変する（375px、768pxはそれぞれデフォルト引数の値）
+// * font-size: fluid(20,10);
+// * 例3: 769px以下の時は10px、1024px以上の時は20px、それ以外の時は可変する（デフォルト引数以外のケースは引数で指定）
+// * font-size: fluid(10,20,769,1024);
+// * 例4: 769px以下の時は20px、1024px以上の時は10px、それ以外の時は可変する（デフォルト引数以外のケースは引数で指定）
+// * font-size: fluid(20,10,769,1024);
+// * 例5: $min-winが$max-winより大きい場合はエラーになる。
+// * ✕ font-size: fluid(20,10,1024,769);
+// *
+// */
+@function fluid($min, $max, $min-win: 375, $max-win: 1280) {
+  // 念のため単位を削除 | Delete units to be sure
+  $min: div($min, ($min * 0 + 1));
+  $max: div($max, ($max * 0 + 1));
+  $min-win: div($min-win, ($min-win * 0 + 1));
+  $max-win: div($max-win, ($max-win * 0 + 1));
+
+  // ウィンドウサイズが逆転している場合はエラーを出す | Throw an error if the window size is reversed
+  @if ($min-win > $max-win) {
+    @error "The value of $min-win is larger than $max-win.（min-winの値が$max-winより大きくなっています。）";
+  }
+
+  $max-win: div($max-win, 100);
+  $min-win: div($min-win, 100);
+
+  $x: div(($max - $min), ($max-win - $min-win));
+  $y: if(($max - $min) > 0, $min - ($min-win * $x) * 1px, $max - ($max-win * $x) * 1px);
+
+  $clamp-min: if(($max - $min) > 0, #{$min}px, #{$max}px);
+  $clamp-max: if(($max - $min) > 0, #{$max}px, #{$min}px);
+
+  @if( $min < $max) {
+    @return min(calc(#{$x}vw + #{$y}), $clamp-max);
+  } @else {
+    @return max(calc(#{$x}vw + #{$y}), $clamp-min);
+  }
+}
+
+// rem版
+@function fluid-rem($min, $max, $min-win: 375, $max-win: 1280) {
+  // 念のため単位を削除 | Delete units to be sure
+  $min: div($min, ($min * 0 + 1));
+  $max: div($max, ($max * 0 + 1));
+  $min-win: div($min-win, ($min-win * 0 + 1));
+  $max-win: div($max-win, ($max-win * 0 + 1));
+
+  // ウィンドウサイズが逆転している場合はエラーを出す | Throw an error if the window size is reversed
+  @if ($min-win > $max-win) {
+    @error "The value of $min-win is larger than $max-win.（min-winの値が$max-winより大きくなっています。）";
+  }
+
+  $max-win: div($max-win, 100);
+  $min-win: div($min-win, 100);
+
+  $x: div(($max - $min), ($max-win - $min-win));
+  $y: if(($max - $min) > 0, $min - ($min-win * $x) * 1px, $max - ($max-win * $x) * 1px);
+
+  $clamp-min: if(($max - $min) > 0, #{$min}, #{$max});
+  $clamp-max: if(($max - $min) > 0, #{$max}, #{$min});
+
+  @if( $min < $max) {
+    @return min(calc(#{$x}vw + #{$y}), rem($clamp-max));
+  } @else {
+    @return max(calc(#{$x}vw + #{$y}), rem($clamp-min));
+  }
+}
+
+
+//* -----------------------------------------------------------------------
+//## 共通Mixin ##################################################
+//----------------------------------------------------------------------- */
+// メディアクエリ設定
+$breakpoints: (
+  "xs": "screen and (max-width: 374px)", // 〜374px
+  "sp": "screen and (max-width: 768px)", // 〜767px
+  "pc": "screen and (min-width: 769px)", // 769px〜
+  "l": "screen and (min-width: 900px)", // 900px〜
+  "xl": "screen and (min-width: 1024px)", // 1024px〜
+  "xxl": "screen and (min-width: 1280px)", // 1280px〜
+  "xxxl": "screen and (min-width: 1440px)" // 1440px〜
+) !default;
+@mixin mediaQuery($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
